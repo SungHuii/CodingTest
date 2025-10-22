@@ -30,9 +30,24 @@ for line in sys.stdin:
     a2 = a * a
     b2 = b * b
     c2 = c * c
-    if (a, b, c) == 0:
+    if (a + b + c) == 0:
         break
     if a2 + b2 == c2:
         print("right")
+    elif a2 + c2 == b2:
+        print("right")
+    elif b2 + c2 == a2:
+        print("right")
     else:
         print("wrong")
+
+# 깔끔한 예시
+import sys
+
+for line in sys.stdin:
+    if not line.strip(): # 공백 방지
+        continue
+    a, b, c = sorted(map(int, line.split())) # 입력을 받는 순간 sorted로 정렬을 해버림 -> c가 가장 긴 변이 됨
+    if a == b == c == 0:
+        break
+    print("right" if a*a + b*b == c*c else "wrong")
