@@ -28,7 +28,7 @@ public class BasicGrammer {
         Arrays.sort(arr2); // 오름차순 정렬
 
         // 2차원 배열
-        int[][] map = new int[n][m]; // n x m 크기의 2차원 배열 선언
+//        int[][] map = new int[n][m]; // n x m 크기의 2차원 배열 선언
 
         /* 리스트 */
         // ArrayList
@@ -54,7 +54,7 @@ public class BasicGrammer {
         // 기본 정렬
         Arrays.sort(arr2); // 오름차순
         // 객체 정렬
-        Arrays.sort(arr2, (a, b) -> a.value - b.value); // 오름차순
+//        Arrays.sort(arr2, (a, b) -> a.value - b.value); // 오름차순
         // 리스트 정렬
         list.sort((a, b) -> a - b); // 오름차순
         // 역순 정렬
@@ -82,32 +82,32 @@ public class BasicGrammer {
         /* BFS / DFS 기본 틀 */
         // BFS (Breadth-First Search) 너비 우선 탐색. 가장 가까운 노드부터 우선적으로 탐색
         Queue<int[]> q = new LinkedList<>();
-        q.add(new int[]{x, y});
+//        q.add(new int[]{x, y});
 
         while (!q.isEmpty()) {
             int[] curr = q.poll();
         }
 
         // DFS (Depth-First Search) 깊이 우선 탐색. 최대한 깊게 탐색 후, 더 이상 갈 곳이 없으면 다시 돌아와서 탐색
-        static void dfs(int x) {
+/*        static void dfs(int x) {
             visited[x] = true;
             for (int next : graph[x]) {
                 if(!visited[next]) {
                     dfs(next);
                 }
             }
-        }
+        }*/
 
         /* 시간 계산 유틸 */
         System.currentTimeMillis(); // 밀리초 단위
 
         /* 기타 자주 쓰는 것 */
         // Math 클래스
-        Math.max(a, b);
+/*        Math.max(a, b);
         Math.min(a, b);
         Math.abs(x);
         Math.pow(a, b); // a의 b제곱
-        Math.sqrt(x); // 제곱근
+        Math.sqrt(x); // 제곱근*/
 
     }
     /* 클래스, 객체 (정렬용 or 구조체로 자주 사용) */
