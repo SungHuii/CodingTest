@@ -1,3 +1,5 @@
+package chatgpt;
+
 import java.util.*;
 
 public class MostFrequent {

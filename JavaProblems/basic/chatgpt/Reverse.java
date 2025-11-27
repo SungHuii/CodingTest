@@ -1,4 +1,4 @@
-import java.util.*;
+package chatgpt;
 
 public class Reverse {
     public static void main(String[] args) {
